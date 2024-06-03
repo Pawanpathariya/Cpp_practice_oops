@@ -19,7 +19,7 @@ int main(){
         cout<<arr[i]<<" "; 
     } 
   
-insertion(arr,s);
+insertion(arr,s); 
 
     cout<<"\nAfter sorting\n";
     for(int i=0;i<s;i++){
