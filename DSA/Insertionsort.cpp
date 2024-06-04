@@ -17,7 +17,7 @@ int main(){
     cout<<"Before sorting\n";
     for(int i=0;i<s;i++){  
         cout<<arr[i]<<" ";  
-    } 
+    }  
   
 insertion(arr,s); 
  
