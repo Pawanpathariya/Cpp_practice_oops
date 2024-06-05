@@ -16,7 +16,7 @@ int main(){
     int s=sizeof(arr)/sizeof(arr[0]); 
     cout<<"Before sorting\n";
     for(int i=0;i<s;i++){  
-        cout<<arr[i]<<" ";  
+        cout<<arr[i]<<" ";   
     }  
   
 insertion(arr,s); 
