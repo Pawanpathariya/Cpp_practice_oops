@@ -9,7 +9,7 @@ while(key>0 && arr[key]<arr[key-1]){
     arr[key-1]=t;
     key--;
 }
-    }
+    } 
 }  
 int main(){
     int arr[]={3,1,2,5,4};   
