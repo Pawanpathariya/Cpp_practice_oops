@@ -6,7 +6,7 @@ int key=i;
 while(key>0 && arr[key]<arr[key-1]){
     int t=arr[key];
     arr[key]=arr[key-1];
-    arr[key-1]=t;
+    arr[key-1]=t; 
     key--;
 }
     } 
