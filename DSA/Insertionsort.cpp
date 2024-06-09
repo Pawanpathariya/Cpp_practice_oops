@@ -18,7 +18,7 @@ int main(){
     for(int i=0;i<s;i++){  
         cout<<arr[i]<<" ";    
     }   
-    
+     
 insertion(arr,s); 
  
     cout<<"\nAfter sorting\n";
