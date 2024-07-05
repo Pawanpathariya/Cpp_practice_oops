@@ -15,7 +15,7 @@ int main(){
     int arr[]={3,1,2,5,4};
     int s=sizeof(arr)/sizeof(arr[0]); 
     cout<<"Before sorting\n";
-    for(int i=0;i<s;i++){ 
+    for(int i=0;i<s;i++){  
         cout<<arr[i]<<" "; 
     } 
   
