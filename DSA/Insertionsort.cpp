@@ -26,4 +26,4 @@ insertion(arr,s);
         cout<<arr[i]<<" ";
     }
  
-}                    
+}                     
