@@ -22,6 +22,7 @@ void cal_area(){
 }
 
 void display(){
+    
     cout<<"Area of circle is "<<area<<endl;
 }
 };
