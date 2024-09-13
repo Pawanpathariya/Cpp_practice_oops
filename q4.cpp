@@ -11,31 +11,26 @@ public:
 */
   #include<iostream>
   using namespace std;
-
   int days[12]={31,28,31,30,31,30,31,31,30,31,30,31};
-
   class Date {
   private:
   int day,month,year;
   static int tday,tmonth,tyear;
-
   public:
   Date(int d ,int m,int y){
     day=d;
     month=m;
     year=y;
   }
- void Reminder() {
+   void Reminder() {
         int daysLeft = 0;
         if (month>tmonth || (month==tmonth && day>tday)) {
-
             for (int i=tmonth;i<month-1;i++) {
                 daysLeft+=days[i];
             }
             daysLeft+=days[month-1]-tday+day;
-        }
-        if(month<tmonth||(month==tmonth && tday>day)){
-
+        } 
+      else if(month<tmonth||(month==tmonth && tday>day)){
             for(int i=tmonth-1;i<12;i++){
             daysLeft+=days[i];
             }
