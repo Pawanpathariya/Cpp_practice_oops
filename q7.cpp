@@ -4,7 +4,7 @@ using namespace std;
 
 class Base{
 public:
-void display(){
+virtual void display(){
     cout<<"Base Class \n";
 }
 };
@@ -15,8 +15,8 @@ public:
  }
 };
 int main(){
-Derived obj;
-obj.display();
-Base obj1;
-obj1.display();
+Base *baseptr=new Derived;
+baseptr->display();
+baseptr->Base::display();
+
 }
