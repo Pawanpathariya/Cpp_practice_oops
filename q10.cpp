@@ -29,4 +29,6 @@ obj2.display();
 obj1.change_nm("ajay");
 obj1.display();
 obj2.display();
+//if want to show deep copy or shallow copy we need to done that in heap but if we do any copy in stack it always shows deep copy
+
 }
