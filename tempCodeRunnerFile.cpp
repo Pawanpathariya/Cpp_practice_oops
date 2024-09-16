@@ -1,1 +1,0 @@
-obj2.display();

@@ -1,29 +1,32 @@
-//shallow copy constructor
 #include<iostream>
 using namespace std;
 class Copy{
+private:
+string name,educat;
+
 public:
-string name,education;
-
-
-Copy(string nm,string ed){
+Copy(string nm,string edu){
     name=nm;
-    education=ed;
+    educat=edu;
 }
-Copy(Copy &obj){
-    name=obj.name;
-    education=obj.education;
+Copy (Copy &obj1){
+    name=obj1.name;
+    educat=obj1.educat;
 }
-
+void change_nm(string n){
+    name=n;
+}
 void display(){
     cout<<"Name "<<name<<endl;
-    cout<<"Education "<<education<<endl;
+    cout<<"Education "<<educat<<endl;
 }
 };
+
 int main(){
-Copy obj1("pawan","Btech");
-obj1.name="naman";
-Copy obj2(obj1);
+Copy obj1("Pawan","Btech"),obj2(obj1);
+obj1.display();
+obj2.display();
+obj1.change_nm("ajay");
 obj1.display();
 obj2.display();
 }
