@@ -1,10 +1,9 @@
 /*1.Find minimum/maximum element */
 #include<iostream>
 using namespace std;
-int main(){
-    int arr[]={44,4,1,5,6,79,45};
-    int len=sizeof(arr)/sizeof(arr[0]),max,min;
-     if(arr[0]>arr[1]){
+void find(int arr[],int len){
+    int max,min;
+      if(arr[0]>arr[1]){
       min=arr[1];
       max=arr[0];
      }
@@ -23,4 +22,10 @@ int main(){
      }
      cout<<"Max is "<<max<<"\n";
      cout<<"Min is "<<min<<"\n";
+}
+
+int main(){
+    int arr[]={44,4,1,5,6,79,45};
+    int len=sizeof(arr)/sizeof(arr[0]);
+   find(arr,len);
 }
