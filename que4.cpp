@@ -12,7 +12,7 @@ int main(){
        arr[start]=arr[end];
        arr[end]=temp;
        start++,end--;
-    }  
+    }   
    
   for(int i=0;i<n;i++){
     cout<<arr[i]<<" "; 
