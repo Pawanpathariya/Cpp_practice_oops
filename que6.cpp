@@ -19,7 +19,7 @@ for(int j=0;j<n;j++){
     if(j==0){
         arr[j]=arr[n-1];
     }
-    else{
+    else{ 
         tp=arr[j];
        arr[j]=temp;
        temp=arr[j+1];
