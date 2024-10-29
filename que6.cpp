@@ -23,7 +23,7 @@ for(int j=0;j<n;j++){
         tp=arr[j];
        arr[j]=temp;
        temp=arr[j+1];
-       arr[j+1]=tp;
+       arr[j+1]=tp ;
     }
  
 }
