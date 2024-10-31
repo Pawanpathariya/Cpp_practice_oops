@@ -13,7 +13,7 @@ int main(){
        arr[end]=temp;
        start++,end--;
     }
-    
+  
   for(int i=0;i<n;i++){
     cout<<arr[i]<<" ";
   }
