@@ -14,7 +14,7 @@ Member functions:
 4) To display name and balance.
 */
 #include<iostream>
-using namespace std;
+using namespace std; 
 
 class Bank{
 private:
