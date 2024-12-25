@@ -1,6 +1,5 @@
 #include<iostream>
 using namespace std;
-
 void bubblesort(int arr[],int n){
 for(int i=0;i<n;i++){
       int count=0;
@@ -17,7 +16,6 @@ for(int i=0;i<n;i++){
     }
 }
 }
-
 int main(){
     int r;
     cout<<"enter the size of array ";
