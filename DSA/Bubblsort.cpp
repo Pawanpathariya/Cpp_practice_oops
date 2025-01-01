@@ -1,34 +1,32 @@
 #include<iostream>
 using namespace std;
-void bubblesort(int arr[],int n){
-for(int i=0;i<n;i++){
-      int count=0;
-    for(int j=0;j<n-i-1;j++){ 
-        if(arr[j]>arr[j+1]){
-            int temp=arr[j];
-            arr[j]=arr[j+1];
-            arr[j+1]=temp;
-            count++;
+void bubble(int arr[],int s){
+    for(int i=0;i<s;i++){
+        bool f=true;
+        for(int j=0;j<s-i-1;j++){
+            if(arr[j]>arr[j+1]){
+                int temp=arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=temp;
+                f=false;
+            }
         }
-    }
-    if(count==0){
-        break;
-    }
+        if(f){
+            break;
+        }
 }
 }
 int main(){
-    int r;
-    cout<<"enter the size of array ";
-    cin>>r;
-    int arr[r];
+    int arr[]={3,2,1,4,5};
+    int s=sizeof(arr)/sizeof(arr[0]);
 
-    if(r>=0 && r<=20){
-        for(int i=0;i<r;i++){
-            cin>>arr[i];
-        }
-        bubblesort(arr,r);
-        for(int i=0;i<r;i++){
-            cout<<arr[i]<<" ";
-        }
+    cout<<"Before sorting\n";
+    for(int i=0;i<s;i++){
+cout<<arr[i]<<" ";
+    }
+bubble(arr,s);
+    cout<<"\nAfter sorting\n";
+    for(int i=0;i<s;i++){
+cout<<arr[i]<<" ";
     }
 }
