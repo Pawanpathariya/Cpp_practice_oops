@@ -13,7 +13,7 @@ while(key>0 && arr[key]<arr[key-1]){
 }
 int main(){
     int arr[]={3,1,2,5,4};
-    int s=sizeof(arr)/sizeof(arr[0]);
+    int s=sizeof(arr)/sizeof(arr[0]); 
     cout<<"Before sorting\n";
     for(int i=0;i<s;i++){
         cout<<arr[i]<<" ";
