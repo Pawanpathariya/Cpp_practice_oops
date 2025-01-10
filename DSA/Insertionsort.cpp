@@ -10,7 +10,7 @@ while(key>0 && arr[key]<arr[key-1]){
     key--;
 }
     }
-}
+} 
 int main(){
     int arr[]={3,1,2,5,4};
     int s=sizeof(arr)/sizeof(arr[0]); 
