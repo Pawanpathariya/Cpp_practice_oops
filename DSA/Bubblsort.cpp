@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-void bubble(int arr[],int s){
+void bubble(int arr[],int s){ 
     for(int i=0;i<s;i++){
         bool f=true;
         for(int j=0;j<s-i-1;j++){
@@ -19,7 +19,7 @@ void bubble(int arr[],int s){
 int main(){
     int arr[]={3,2,1,4,5};
     int s=sizeof(arr)/sizeof(arr[0]);
-
+ 
     cout<<"Before sorting\n";
     for(int i=0;i<s;i++){
 cout<<arr[i]<<" ";
